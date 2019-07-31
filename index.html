@@ -61,9 +61,21 @@ a:hover, a:active {
 }
 
 a:active {
-  color: yellow;
-  background-color: transparent;
+  color: black;
+  background-color: red;
   text-decoration: none;
+}
+      a::first-line {
+  letter-spacing: 2px;
+  word-spacing: 4px;
+}
+      .flicker-box {
+  animation: flicker .2s alternate infinite;
+}
+
+@keyframes flicker {
+  0% {  opacity: 1;}
+  100% {  opacity: 0.5;}
 }
   </style>
 </html>
