@@ -13,6 +13,7 @@
       <p>
           saint christopher two
       </p>
+    <p class="flicker-box">paragraph content</p>
   </body>        
   
   <style>
@@ -21,6 +22,14 @@
     color:#fff;
     text-align:center;
     }
+      .flicker-box {
+  animation: flicker .2s alternate infinite;
+}
+
+@keyframes flicker {
+  0% {  opacity: 1;}
+  100% {  opacity: 0.5;}
+}
   </style>
  
 </html>
