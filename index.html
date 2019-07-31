@@ -47,17 +47,26 @@ p::first-line {
   0% {  opacity: 1;}
   100% {  opacity: 0.5;}
 }
-      a:link, a:visited {
-  background-color: green;
-  color: black;
-  padding: 15px 25px;
-  text-align: center;
+a:link {
+  color: green; 
+  background-color: transparent; 
   text-decoration: none;
-  display: inline-block;
+}
+
+a:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
 }
 
 a:hover {
-  color: blue;
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: yellow;
   background-color: transparent;
   text-decoration: underline;
 }
