@@ -26,6 +26,7 @@ Your browser does not support the video tag.
       
       <h2> (--------- help us ----------)
       </h2>
+      <p class="flicker-box">paragraph content</p>
   </body>
   
   <style>
@@ -37,6 +38,14 @@ Your browser does not support the video tag.
 p::first-line {
   letter-spacing: 2px;
   word-spacing: 4px;
+}
+      .flicker-box {
+  animation: flicker .2s alternate infinite;
+}
+
+@keyframes flicker {
+  0% {  opacity: 1;}
+  100% {  opacity: 0.5;}
 }
   </style>
 </html>
